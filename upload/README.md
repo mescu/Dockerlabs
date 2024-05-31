@@ -52,7 +52,7 @@ Y lo voy a subir a ver si no me da problemas al subirlo.
 
 No nos ha dado problemas al subirlo.
 
-## Fuzzing
+## Enumeración web con Gobuster
 Ahora con **Gobuster** vamos a ver que directorios oculta esta página, en algun sitio tendra que estar almacenado el archivo que hemos subido.
 Usamos el comando
 > sudo gobuster sudo gobuster dir -u "http://172.17.0.2" -w /home/mescu/Worldlists/directory_list_lowercase_2.3_medium.txt -x .php, .sh, .py, .txt
