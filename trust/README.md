@@ -1,4 +1,4 @@
-# MAQUINA TRUST DOCKER LAB
+# MÁQUINA TRUST DOCKER LAB
 **Dificultad:** Muy fácil
 
 **Creador:** El Pingüino de Mario
@@ -11,19 +11,23 @@ Descargamos el laboratorio y lo extraemos en una carpeta, en mi caso se llama tr
 ![Trust lab pic](https://github.com/mescu/Dockerlabs/blob/main/trust/images/trustlabpic.png)
 
 ## Ejecución del lab
-Para ejecutar el lab tenemos que poner en la consola "sudo bash autodeploy.sh trust.tar".
-Una vez hecho esto nos dara la ip de la maquina que vamos a atacar. En mi caso es la 172.17.0.2
+Para ejecutar el lab tenemos que poner en la consola 
+> sudo bash autodeploy.sh trust.tar
+
+Una vez hecho esto nos dará la ip de la máquina que vamos a atacar. En mi caso es la 172.17.0.2
 
 ## Comprobación de ping
 Vamos a comprobar si hacemos ping con la máquina.
 Para ello ponemos "ping -c1 172.17.0.2"
-> -c1: envia solo un paquete a la ip indicada
+> -c1: envía solo un paquete a la ip indicada.
 
 ![Ping pic](https://github.com/mescu/Dockerlabs/blob/main/trust/images/ping.png)
 
 ## Escaneo de Puertos
-Ya que tenemos conecitividad con la maquina vamos a escanear los puertos abiertos de la maquina, primero tenemos que ser root "sudo su".
-Para escanear los puertos abiertos podemos usar el comando "nmap -p- --open --min-rate 5000 -sS -vvv 172.17.0.2".
+Ya que tenemos conecitividad con la máquina vamos a escanear los puertos abiertos de la máquina, primero tenemos que ser root "sudo su".
+Para escanear los puertos abiertos podemos usar el comando 
+> nmap -p- --open --min-rate 5000 -sS -vvv 172.17.0.2
+
 Yo lo voy a hacer una tool creada por mi, "m0PortScanner".
 Voy a mostrar ambos procesos.
 
@@ -85,7 +89,7 @@ Para ello usamos el comando
 
 ![sudo -l  pic](https://github.com/mescu/Dockerlabs/blob/main/trust/images/sudo-l.png)
 
-Y vemos que tiene permisos de ejecucion como sudo en el archivo "VIM".
+Y vemos que tiene permisos de ejecucion como sudo en el binario "vim".
 Por lo que vamos a entrar en https://gtfobins.github.io/ y buscamos "vim".
 
 Vemos que podemos escalar privilegios con el comando
