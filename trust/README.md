@@ -50,7 +50,7 @@ Echamos un vistazo a la web que hay montada con la ip 172.17.0.2 y vemos que es 
 
 ![Web pic](https://github.com/mescu/Dockerlabs/blob/main/trust/images/web.png)
 
-## Fuzzing con Gobuster
+## Enumeración web con Gobuster
 
 Vamos a usar la herramienta **Gobuster** para hacer un reconocimiento de la web y asi poder ver los directorios de la misma.
 Para ello vamos a necesitar una **wordlist**, la que usaré yo va a ser 
