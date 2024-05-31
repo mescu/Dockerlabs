@@ -1,4 +1,4 @@
-# MAQUINA TRUST DOCKER LAB
+# MAQUINA UPLOAD DOCKER LAB
 
 **Dificultad:** Muy fácil
 
