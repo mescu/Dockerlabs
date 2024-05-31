@@ -1,4 +1,4 @@
-# MAQUINA UPLOAD DOCKER LAB
+# MÁQUINA UPLOAD DOCKER LAB
 
 **Dificultad:** Muy fácil
 
@@ -12,7 +12,10 @@ Descargamos el laboratorio y lo extraemos en una carpeta, en mi caso se llama up
 ![Upload lab pic](https://github.com/mescu/Dockerlabs/blob/main/upload/images/upload.png)
 
 ## Ejecución del lab
-Para ejecutar el lab tenemos que poner en la consola "sudo bash autodeploy.sh upload.tar". Una vez hecho esto nos dara la ip de la maquina que vamos a atacar. En mi caso es la 172.17.0.2
+Para ejecutar el lab tenemos que poner en la consola 
+> sudo bash autodeploy.sh upload.tar
+
+Una vez hecho esto nos dará la ip de la máquina que vamos a atacar. En mi caso es la 172.17.0.2
 
 ## Comprobación de ping
 Vamos a comprobar si hacemos ping con la máquina. Para ello ponemos 
@@ -22,7 +25,7 @@ Vamos a comprobar si hacemos ping con la máquina. Para ello ponemos
 
 ## Escaneo de Puertos
 
-Ya que tenemos conecitividad con la maquina vamos a escanear los puertos abiertos de la maquina.
+Ya que tenemos conecitividad con la máquina vamos a escanear los puertos abiertos de la máquina.
 Para ello podemos usar el comando 
 > sudo nmap -p- --open --min-rate 5000 -sS -vvv 172.17.0.2
 
@@ -61,7 +64,7 @@ Vemos que hay un directorio llamando **uploads**, vamos a entrar.
 Aquí esta el archivo que subimos anteriormente, de alguna manera podremos hacer una reverse shell con php.
 
 ## Reverse Shell
-En https://www.revshells.com/ podemos crear una reverse shell de lo que queramos en segundos, en nuestro caso pondremos la ip de nuestra maquina, en mi caso **172.17.0.1** y el puerto que queremos usar para escuchar, en mi caso el **443** y seleccionamos PHP PentestMonkey que es de las más usadas.
+En https://www.revshells.com/ podemos crear una reverse shell de lo que queramos en segundos, en nuestro caso pondremos la ip de nuestra máquina, en mi caso **172.17.0.1** y el puerto que queremos usar para escuchar, en mi caso el **443** y seleccionamos PHP PentestMonkey que es de las más usadas.
 
 ![Reverse Shell pic](https://github.com/mescu/Dockerlabs/blob/main/upload/images/reverse.png)
 
